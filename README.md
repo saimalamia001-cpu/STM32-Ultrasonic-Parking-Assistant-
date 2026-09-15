@@ -65,9 +65,7 @@ The project was developed using STM32 HAL libraries.
 
 Main modules include:
 
-main.c
-
-Contains:
+## main.c Contains:
 
 GPIO initialization
 Timer initialization
@@ -76,7 +74,8 @@ HC-SR04 measurement
 Parking warning logic
 LCD output
 Main control loop
-lcd_i2c.c
+
+## lcd_i2c.c
 
 Contains the I2C LCD driver including:
 
@@ -91,19 +90,9 @@ HCSR04_Read()
 
 Generates the ultrasonic trigger pulse, measures the echo duration, and converts the measured time into distance.
 
-Parking_Assist()
 
-Controls the LEDs and buzzer according to the measured distance.
 
-All_Off()
-
-Turns OFF all LEDs and the buzzer.
-
-delay_us()
-
-Provides microsecond-level delays using an STM32 hardware timer.
-
-Distance Measurement
+## Distance Measurement
 
 The ultrasonic distance is calculated from the time required for the transmitted sound wave to travel to the obstacle and return.
 
@@ -121,9 +110,11 @@ Distance (cm) = Echo Time (µs) / 58
 # Circuit Diagram
 
 the project circuit diagram:
+
 <img width="754" height="567" alt="image" src="https://github.com/user-attachments/assets/87fb1185-9979-4d88-b0ac-0dfe22301d3a" />
 
 # Prototype
+
 <img width="523" height="367" alt="image" src="https://github.com/user-attachments/assets/28bc0a87-0bc6-4ee5-8aff-43d214120991" />
 
 
